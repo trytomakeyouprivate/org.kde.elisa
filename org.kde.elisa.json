@@ -104,7 +104,11 @@
         {
           "type": "patch",
           "path": "0001-hardcode-icon-theme-name-to-breeze-to-ensure-consist.patch"
-        }
+        },
+	{
+          "type": "patch",
+	  "path": "0002-add-the-stable-releases-to-the-appdata-file.patch"
+	}
       ]
     }
   ]
