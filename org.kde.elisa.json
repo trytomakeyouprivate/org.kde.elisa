@@ -4,6 +4,7 @@
   "runtime-version": "5.9",
   "sdk": "org.kde.Sdk",
   "command": "elisa",
+  "rename-icon": "elisa",
   "finish-args": [
     "--share=ipc",
     "--socket=x11",
