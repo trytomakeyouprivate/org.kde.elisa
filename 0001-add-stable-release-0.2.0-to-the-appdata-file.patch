@@ -1,0 +1,26 @@
+From 3e7442de1c0f2d5d941a3db92e71dda8facce62b Mon Sep 17 00:00:00 2001
+From: Matthieu Gallien <matthieu_gallien@yahoo.fr>
+Date: Sun, 1 Jul 2018 21:59:09 +0200
+Subject: [PATCH] add stable release 0.2.0 to the appdata file
+
+---
+ org.kde.elisa.appdata.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/org.kde.elisa.appdata.xml b/org.kde.elisa.appdata.xml
+index f2c8e8e..e28051c 100644
+--- a/org.kde.elisa.appdata.xml
++++ b/org.kde.elisa.appdata.xml
+@@ -124,7 +124,8 @@
+   </provides>
+   <project_group>KDE</project_group>
+   <releases>
+-  ​  <release version="0.1.1" date="2018-04-16"/>
++    <release version="0.2.0" date="2018-07-01"/>
++    <release version="0.1.1" date="2018-04-16"/>
+     <release version="0.1.0" date="2018-04-06"/>
+   </releases>
+ </component>
+-- 
+2.18.0
+
