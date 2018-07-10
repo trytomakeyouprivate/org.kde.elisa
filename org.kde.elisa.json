@@ -9,7 +9,7 @@
     "--share=ipc",
     "--socket=x11",
     "--socket=wayland",
-    "--filesystem=home:ro",
+    "--filesystem=host:ro",
     "--socket=pulseaudio",
     "--device=dri",
     "--talk-name=org.kde.baloo",
