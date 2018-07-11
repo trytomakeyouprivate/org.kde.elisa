@@ -103,17 +103,13 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/elisa/0.2.0/elisa-0.2.0.tar.xz",
-          "sha256": "4cf7f8a170c706fb220c641053e5141106effdd651575fd215efb2f9e2708d2b"
+          "url": "https://download.kde.org/stable/elisa/0.2.1/elisa-0.2.1.tar.xz",
+          "sha256": "b0ee2d3ea01d573ffc53ca8719ca48c831597f408e3803ae5e7606fd3dfbfe7e"
         },
         {
           "type": "patch",
           "path": "0001-force-Breeze-icon-theme.patch"
-        },
-	{
-          "type": "patch",
-	  "path": "0001-add-stable-release-0.2.0-to-the-appdata-file.patch"
-	}
+        }
       ]
     }
   ]
