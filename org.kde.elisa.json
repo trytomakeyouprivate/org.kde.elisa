@@ -27,8 +27,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.47/kdeclarative-5.47.0.tar.xz",
-          "sha256": "3a55236b3aed4ca1b5c754b2b97652a4c91c1c15107396c111bc41ef8d4874a0"
+          "url": "https://download.kde.org/stable/frameworks/5.50/kdeclarative-5.50.0.tar.xz",
+          "sha256": "8cb0bd0e374f1a0e170f494dea4805b5c019673d413f4fa7779940dcd4fe8ebb"
         }
       ]
     },
@@ -57,8 +57,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.47/kfilemetadata-5.47.0.tar.xz",
-          "sha256": "758b0b741a1f1b79365cf4bae3bb0054504cae71f3ab538e9f0cd83d5521977b"
+          "url": "https://download.kde.org/stable/frameworks/5.50/kfilemetadata-5.50.0.tar.xz",
+          "sha256": "f414e10bfb3d5f3cec14a7074bfb493d6621dbf73c36fcdca7f765bb3a226118"
         }
       ]
     },
@@ -89,8 +89,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.47/baloo-5.47.0.tar.xz",
-          "sha256": "d8a9db969aaf1647b1cc03b82b18640e8d6e563a607411658106e57b085d5796"
+          "url": "https://download.kde.org/stable/frameworks/5.50/baloo-5.50.0.tar.xz",
+          "sha256": "c6bb8b65e8b1428b35fe0324b0da1416262e6e0b47386ea755a0855fc502c91e"
         }
       ]
     },
@@ -103,12 +103,16 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/elisa/0.2.1/elisa-0.2.1.tar.xz",
-          "sha256": "b0ee2d3ea01d573ffc53ca8719ca48c831597f408e3803ae5e7606fd3dfbfe7e"
+          "url": "https://download.kde.org/stable/elisa/0.3.0/elisa-0.3.0.tar.xz",
+          "sha256": "e7983d71c3ee30bb941a72402165976e45c7a8ecdb2f4051b6d71c21035bc005"
         },
         {
           "type": "patch",
           "path": "0001-force-Breeze-icon-theme.patch"
+        },
+        {
+          "type": "patch",
+          "path": "0002-add-0.3.0-stable-version-to-appdata-file.patch"
         }
       ]
     }
