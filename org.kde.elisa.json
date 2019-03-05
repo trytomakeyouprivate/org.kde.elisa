@@ -1,7 +1,7 @@
 {
   "id": "org.kde.elisa",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.11",
+  "runtime-version": "5.12",
   "sdk": "org.kde.Sdk",
   "command": "elisa",
   "rename-icon": "elisa",
@@ -42,8 +42,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.53/kfilemetadata-5.53.0.tar.xz",
-          "sha256": "1a08707ce6f6203f1f3770d628fc027d1cae7f5daa9f6acf633a1a121efc8fa3"
+          "url": "https://download.kde.org/stable/frameworks/5.55/kfilemetadata-5.55.0.tar.xz",
+          "sha256": "b1a62f1d62ad0e45f523cbf96b872d3617a65c193483f7a5cbc6b8e48c11123b"
         }
       ]
     },
@@ -74,8 +74,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.53/baloo-5.53.0.tar.xz",
-          "sha256": "e805f6f97ba9bc9a396653ae14bcdcf80502a5508d6f130b8f4ca9fcdee97dcb"
+          "url": "https://download.kde.org/stable/frameworks/5.55/baloo-5.55.0.tar.xz",
+          "sha256": "b0676a76fe9bda625de335877e2ec4ffbb4dfdd7ec8c2fe1d4370d130ed01519"
         }
       ]
     },
