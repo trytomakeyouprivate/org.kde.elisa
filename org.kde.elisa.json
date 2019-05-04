@@ -34,16 +34,32 @@
     },
     {
       "config-opts": [
-        "-DENABLE_TESTING=OFF",
-        "-DCMAKE_INSTALL_LIBDIR=lib"
+        "BUILDCC=gcc",
+        "--disable-lua",
+        "--disable-a52",
+        "--disable-qt",
+        "--disable-ncurses"
+      ],
+      "name": "libvlc",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "ftp://ftp.videolan.org/pub/videolan/vlc/3.0.6/vlc-3.0.6.tar.xz",
+          "sha256": "18c16d4be0f34861d0aa51fbd274fb87f0cab3b7119757ead93f3db3a1f27ed3"
+        }
+      ]
+    },
+    {
+      "config-opts": [
+        "-DENABLE_TESTING=OFF"
       ],
       "name": "kfilemetadata",
       "buildsystem": "cmake-ninja",
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.55/kfilemetadata-5.55.0.tar.xz",
-          "sha256": "b1a62f1d62ad0e45f523cbf96b872d3617a65c193483f7a5cbc6b8e48c11123b"
+          "url": "https://download.kde.org/stable/frameworks/5.57/kfilemetadata-5.57.0.tar.xz",
+          "sha256": "49e6c281fdffd4f5fe363c6cefdb6c3022ef57c935d7d6b135607cdde9b2d116"
         }
       ]
     },
@@ -74,8 +90,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.55/baloo-5.55.0.tar.xz",
-          "sha256": "b0676a76fe9bda625de335877e2ec4ffbb4dfdd7ec8c2fe1d4370d130ed01519"
+          "url": "https://download.kde.org/stable/frameworks/5.57/baloo-5.57.0.tar.xz",
+          "sha256": "32ab4ed2d295fe734a4a475403dea72e2feef27f662ae64c841c410eb7bb3dd3"
         }
       ]
     },
@@ -88,16 +104,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/elisa/0.3.0/elisa-0.3.0.tar.xz",
-          "sha256": "e7983d71c3ee30bb941a72402165976e45c7a8ecdb2f4051b6d71c21035bc005"
+          "url": "https://download.kde.org/unstable/elisa/0.3.80/elisa-0.3.80.tar.xz",
+          "sha256": "87804c2d43c500dff8b0aa4841f7796eb85839f17d1edc310896fdbba723adb4"
         },
         {
           "type": "patch",
           "path": "0001-force-Breeze-icon-theme.patch"
-        },
-        {
-          "type": "patch",
-          "path": "0002-add-0.3.0-stable-version-to-appdata-file.patch"
         }
       ]
     }
