@@ -1,0 +1,29 @@
+From 7ece00e34e16c9a83bd41d0555a150d53a285691 Mon Sep 17 00:00:00 2001
+From: Matthieu Gallien <matthieu_gallien@yahoo.fr>
+Date: Sat, 4 May 2019 13:29:46 +0200
+Subject: [PATCH] fix order of releases in app stream metadata file
+
+---
+ org.kde.elisa.appdata.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/org.kde.elisa.appdata.xml b/org.kde.elisa.appdata.xml
+index ae7a1f7..0cc3f03 100644
+--- a/org.kde.elisa.appdata.xml
++++ b/org.kde.elisa.appdata.xml
+@@ -138,11 +138,11 @@
+   </provides>
+   <project_group>KDE</project_group>
+   <releases>
++    <release version="0.3.80" date="2019-05-04"/>
+     <release version="0.3.0" date="2018-09-29"/>
+     <release version="0.2.1" date="2018-07-10"/>
+     <release version="0.2.0" date="2018-07-01"/>
+     <release version="0.1.1" date="2018-04-16"/>
+     <release version="0.1.0" date="2018-04-06"/>
+-    <release version="0.3.80" date="2019-05-04"/>
+   </releases>
+ </component>
+-- 
+2.20.1
+

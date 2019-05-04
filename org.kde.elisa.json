@@ -110,6 +110,10 @@
         {
           "type": "patch",
           "path": "0001-force-Breeze-icon-theme.patch"
+        },
+        {
+          "type": "patch",
+          "path": "0002-fix-order-of-releases-in-app-stream-metadata-file.patch"
         }
       ]
     }
