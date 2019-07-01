@@ -44,8 +44,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "ftp://ftp.videolan.org/pub/videolan/vlc/3.0.7/vlc-3.0.7.tar.xz",
-          "sha256": "5cb5fe140f0f4bae3e0a613fb5f516270f62e2dbde6de27fa78ea9f43cd73916"
+          "url": "ftp://ftp.videolan.org/pub/videolan/vlc/3.0.7.1/vlc-3.0.7.1.tar.xz",
+          "sha256": "0655804371096772f06104b75c21cde8a76e3b6c8a2fdadc97914f082c6264f5"
         }
       ]
     },
@@ -104,16 +104,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/elisa/0.4.1/elisa-0.4.1.tar.xz",
-          "sha256": "77836c406d32d52245987e7d26399b006e2d333fb3d00beaea059ea69f60a057"
+          "url": "https://download.kde.org/stable/elisa/0.4.2/elisa-0.4.2.tar.xz",
+          "sha256": "fc2496cad8b52daafa2c28fd033d8bd47e842de3ef3865cf0bffdd84a8712a6d"
         },
         {
           "type": "patch",
           "path": "0001-force-Breeze-icon-theme.patch"
-	},
-	{
-	  "type": "patch",
-	  "path": "0001-add-0.4.1-release-to-appstream-metadata-file.patch"
         }
       ]
     }
