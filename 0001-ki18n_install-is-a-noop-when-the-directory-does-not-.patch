@@ -1,0 +1,28 @@
+From 986d6831d540583fa885fa45e952ad0d9649fa64 Mon Sep 17 00:00:00 2001
+From: Matthieu Gallien <matthieu_gallien@yahoo.fr>
+Date: Mon, 18 Nov 2019 22:11:04 +0100
+Subject: [PATCH 1/2] ki18n_install is a noop when the directory does not exist
+
+remove the if before ki18n_install because it is not needed
+---
+ CMakeLists.txt | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0eb093d..b3bbfe0 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -184,9 +184,7 @@ install(
+     DESTINATION ${KDE_INSTALL_METAINFODIR}
+ )
+ 
+-if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
+-    ki18n_install(po)
+-endif()
++ki18n_install(po)
+ 
+ if (${ECM_VERSION} STRGREATER "5.58.0")
+     install(FILES elisa.categories DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+-- 
+2.24.0
+

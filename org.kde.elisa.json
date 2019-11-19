@@ -105,12 +105,20 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/elisa/0.4.2/elisa-0.4.2.tar.xz",
-          "sha256": "fc2496cad8b52daafa2c28fd033d8bd47e842de3ef3865cf0bffdd84a8712a6d"
+          "url": "https://download.kde.org/unstable/applications/19.11.80/src/elisa-19.11.80.tar.xz",
+          "sha256": "1833401b15712065f7b2695625ef196cfcb2b2442658286be533ba2014b95755"
         },
         {
           "type": "patch",
           "path": "0001-force-Breeze-icon-theme.patch"
+        },
+        {
+          "type": "patch",
+          "path": "0001-ki18n_install-is-a-noop-when-the-directory-does-not-.patch"
+        },
+        {
+          "type": "patch",
+          "path": "0002-remove-ki18n-to-avoid-having-it-twice-in-v19.11.80.patch"
         }
       ]
     }
