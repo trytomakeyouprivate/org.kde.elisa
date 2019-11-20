@@ -119,6 +119,10 @@
         {
           "type": "patch",
           "path": "0002-remove-ki18n-to-avoid-having-it-twice-in-v19.11.80.patch"
+        },
+        {
+          "type": "patch",
+          "path": "0001-add-0.4.1-release-to-appstream-metadata-file.patch"
         }
       ]
     }
