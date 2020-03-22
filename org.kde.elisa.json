@@ -59,8 +59,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.65/kfilemetadata-5.65.0.tar.xz",
-          "sha256": "9df372bcc1f910a332b4f5f8b34f5cfeb453c002bec93cdb4004e36157883a75"
+          "url": "https://download.kde.org/stable/frameworks/5.67/kfilemetadata-5.67.0.tar.xz",
+          "sha256": "a121c73c0fd733a1e258914346c30a9a2365fd4909a474fa7818de35b7e1b763"
         }
       ]
     },
@@ -91,8 +91,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.65/baloo-5.65.0.tar.xz",
-          "sha256": "c24c53838d57b40a1f099cb40240cad86fb9ebbf09fd0f811d9ce14a9cf5f3bf"
+          "url": "https://download.kde.org/stable/frameworks/5.67/baloo-5.67.0.tar.xz",
+          "sha256": "81cf19756572f1d70da3c8788658a8a0d74bff1ad0685164084302231c67be69"
         }
       ]
     },
@@ -106,7 +106,7 @@
         {
           "type": "archive",
           "url": "https://download.kde.org/stable/release-service/19.12.1/src/elisa-19.12.1.tar.xz",
-          "sha256": "0c4a4ab6535839d8fb7f76febafa571876bb9f2378093d7370b58d341dae42a5"
+          "sha256": "4929da2ebe68a3dc0d22a809a7b2a84493aa6f072e16515bd557ddaac51fd8fa"
         },
         {
           "type": "patch",
@@ -119,10 +119,6 @@
         {
           "type": "patch",
           "path": "0002-remove-ki18n-to-avoid-having-it-twice-in-v19.11.80.patch"
-        },
-        {
-          "type": "patch",
-          "path": "0001-add-0.4.1-release-to-appstream-metadata-file.patch"
         }
       ]
     }
