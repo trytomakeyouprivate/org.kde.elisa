@@ -1,7 +1,7 @@
 {
   "id": "org.kde.elisa",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.13",
+  "runtime-version": "5.14",
   "sdk": "org.kde.Sdk",
   "command": "elisa",
   "rename-icon": "elisa",
@@ -59,8 +59,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.67/kfilemetadata-5.67.0.tar.xz",
-          "sha256": "a121c73c0fd733a1e258914346c30a9a2365fd4909a474fa7818de35b7e1b763"
+          "url": "https://download.kde.org/stable/frameworks/5.66/kfilemetadata-5.66.0.tar.xz",
+          "sha256": "d78c2128887591229e6c61c60e77af8647e407d570b07892f5f06ab682f807b9"
         }
       ]
     },
@@ -91,8 +91,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.67/baloo-5.67.0.tar.xz",
-          "sha256": "81cf19756572f1d70da3c8788658a8a0d74bff1ad0685164084302231c67be69"
+          "url": "https://download.kde.org/stable/frameworks/5.66/baloo-5.66.0.tar.xz",
+          "sha256": "9495869eee72f587efadc8a848c3f76b93a1dcb1914c8e818d7084451107a1f8"
         }
       ]
     },
@@ -105,20 +105,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/19.12.1/src/elisa-19.12.1.tar.xz",
-          "sha256": "4929da2ebe68a3dc0d22a809a7b2a84493aa6f072e16515bd557ddaac51fd8fa"
+          "url": "https://download.kde.org/stable/release-service/19.12.3/src/elisa-19.12.3.tar.xz",
+          "sha256": "28ad795c1d993969d49ab71514129589a71ee6fe8a2de785e22f17f5af7c3d32"
         },
         {
           "type": "patch",
           "path": "0001-force-Breeze-icon-theme.patch"
-        },
-        {
-          "type": "patch",
-          "path": "0001-ki18n_install-is-a-noop-when-the-directory-does-not-.patch"
-        },
-        {
-          "type": "patch",
-          "path": "0002-remove-ki18n-to-avoid-having-it-twice-in-v19.11.80.patch"
         }
       ]
     }
