@@ -59,8 +59,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.66/kfilemetadata-5.66.0.tar.xz",
-          "sha256": "d78c2128887591229e6c61c60e77af8647e407d570b07892f5f06ab682f807b9"
+          "url": "https://download.kde.org/stable/frameworks/5.69/kfilemetadata-5.69.0.tar.xz",
+          "sha256": "9b24cac0b224e80658cf60a8df0ac40c08a229e850e98581bf872bf895c400cd"
         }
       ]
     },
@@ -87,12 +87,12 @@
         "-DLMDB_DIR=/app"
       ],
       "name": "baloo",
-      "buildsystem": "cmake-ninja",
+      "buildsystem": "cmake",
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.66/baloo-5.66.0.tar.xz",
-          "sha256": "9495869eee72f587efadc8a848c3f76b93a1dcb1914c8e818d7084451107a1f8"
+          "url": "https://download.kde.org/stable/frameworks/5.69/baloo-5.69.0.tar.xz",
+          "sha256": "4a996feade929cb6913382e5993f20972a5dc066fbfead13a02f9798ea80c85b"
         }
       ]
     },
