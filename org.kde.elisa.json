@@ -87,7 +87,8 @@
         "-DLMDB_DIR=/app"
       ],
       "name": "baloo",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
+      "builddir": true,
       "sources": [
         {
           "type": "archive",
