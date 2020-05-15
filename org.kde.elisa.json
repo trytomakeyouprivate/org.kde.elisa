@@ -106,8 +106,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/20.04.0/src/elisa-20.04.0.tar.xz",
-          "sha256": "dacb49adeb0bcae6abc4a0748731de924d2291b8ac82876590018fa947181b3b"
+          "url": "https://download.kde.org/stable/release-service/20.04.1/src/elisa-20.04.1.tar.xz",
+          "sha256": "c471e38f5ccc380f73eae10dec2f7fa9eefb81eae3203c99710e0e2ed03d6efa"
         },
         {
           "type": "patch",
