@@ -16,6 +16,13 @@
     "--own-name=org.mpris.MediaPlayer2.elisa",
     "--env=BALOO_DB_PATH=.local/share/baloo"
   ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/lib/cmake",
+    "*.la",
+    "*.a"
+  ],
   "modules": [
     {
       "config-opts": [
