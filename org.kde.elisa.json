@@ -23,6 +23,10 @@
     "*.la",
     "*.a"
   ],
+  "cleanup-commands": [
+    "rm -f /app/lib/vlc/plugins/plugins.dat",
+    "/app/lib/vlc/vlc-cache-gen /app/lib/vlc/plugins"
+  ],
   "modules": [
     {
       "config-opts": [
