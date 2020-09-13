@@ -16,6 +16,17 @@
     "--own-name=org.mpris.MediaPlayer2.elisa",
     "--env=BALOO_DB_PATH=.local/share/baloo"
   ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/lib/cmake",
+    "*.la",
+    "*.a"
+  ],
+  "cleanup-commands": [
+    "rm -f /app/lib/vlc/plugins/plugins.dat",
+    "/app/lib/vlc/vlc-cache-gen /app/lib/vlc/plugins"
+  ],
   "modules": [
     {
       "config-opts": [
@@ -27,7 +38,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://taglib.github.io/releases/taglib-1.11.1.tar.gz",
+          "url": "https://taglib.github.io/releases/taglib-1.11.1.tar.gz",
           "sha256": "b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b"
         }
       ]
@@ -45,8 +56,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "ftp://ftp.videolan.org/pub/videolan/vlc/3.0.11.1/vlc-3.0.11.1.tar.xz",
+          "url": "https://get.videolan.org/vlc/3.0.11.1/vlc-3.0.11.1.tar.xz",
           "sha256": "189311d28aa814f106a7b3645211ac52c0b3e2b9f4b348de2f63bab3218086b8"
+        },
+        {
+          "type": "patch",
+          "path": "vlc-ignore-time-for-cache.patch"
         }
       ]
     },
@@ -69,7 +84,7 @@
       "sources": [
         {
           "type": "git",
-          "url": "git://github.com/LMDB/lmdb.git",
+          "url": "https://github.com/LMDB/lmdb.git",
           "branch": "LMDB_0.9.18",
           "commit": "ad8488cfac644d7a289e428ab3c403c859d844cb"
         }
