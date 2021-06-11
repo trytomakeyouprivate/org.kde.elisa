@@ -73,8 +73,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.76/kfilemetadata-5.76.0.tar.xz",
-          "sha256": "fa24758c93ce3df9f8ced4310dc0bf58e129b08e50f254daafa025afc9213d68"
+          "url": "https://download.kde.org/stable/frameworks/5.82/kfilemetadata-5.82.0.tar.xz",
+          "sha256": "a5625e00e91ffcbe34a8bd38c8af9339784a596a2ae844ded5250b3c213ceab8"
         }
       ]
     },
@@ -105,8 +105,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.76/baloo-5.76.0.tar.xz",
-          "sha256": "8ae9e6dd51c84150f7fc581ebf04617f3ee9e1f96e08df79d6f15ee29f5f95f9"
+          "url": "https://download.kde.org/stable/frameworks/5.82/baloo-5.82.0.tar.xz",
+          "sha256": "d864f0c073209065bafe24995c70984cb92ca70f37ca647fb052627c7a3685fe"
         }
       ]
     },
@@ -119,8 +119,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/21.04.1/src/elisa-21.04.1.tar.xz",
-          "sha256": "226560f2ed42610c98535a457f8cff1dc953ec144e2de3819373a3a5de421ea2"
+          "url": "https://download.kde.org/stable/release-service/21.04.2/src/elisa-21.04.2.tar.xz",
+          "sha256": "11d28647afe7f7aba84585f76a5f1ee0260c8f3852fe4c2e4f1a70af49b7182b"
         },
         {
           "type": "patch",
