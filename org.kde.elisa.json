@@ -93,10 +93,6 @@
           "type": "archive",
           "url": "https://download.kde.org/stable/release-service/21.12.1/src/elisa-21.12.1.tar.xz",
           "sha256": "1aca4a62253185306c725fbdd6954fbe53cd0bb68dd46a02b0164ff2927a90d8"
-        },
-        {
-          "type": "patch",
-          "path": "0001-force-Breeze-icon-theme.patch"
         }
       ]
     }
