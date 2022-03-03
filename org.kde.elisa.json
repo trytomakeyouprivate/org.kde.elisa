@@ -91,8 +91,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/21.12.2/src/elisa-21.12.2.tar.xz",
-          "sha256": "0572eb9bbe1f4101d2f3e9ee77b99c81892852e23043f99a32be084de2029e7f"
+          "url": "https://download.kde.org/stable/release-service/21.12.3/src/elisa-21.12.3.tar.xz",
+          "sha256": "8afd7c82af4b4e023bcab3b473997baf5cf7ab4153f497c3b698328706d9e931"
         }
       ]
     }
