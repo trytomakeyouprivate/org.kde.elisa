@@ -13,6 +13,7 @@
     "--socket=pulseaudio",
     "--device=dri",
     "--talk-name=org.kde.baloo",
+    "--talk-name=org.kde.StatusNotifierWatcher",
     "--own-name=org.mpris.MediaPlayer2.elisa",
     "--env=BALOO_DB_PATH=.local/share/baloo"
   ],
