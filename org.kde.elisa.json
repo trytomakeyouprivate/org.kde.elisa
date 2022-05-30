@@ -36,14 +36,20 @@
         "--disable-a52",
         "--disable-qt",
         "--disable-ncurses",
-	"--disable-udev"
+        "--disable-udev"
       ],
       "name": "libvlc",
       "sources": [
         {
           "type": "archive",
-          "url": "https://get.videolan.org/vlc/3.0.16/vlc-3.0.16.tar.xz",
-          "sha256": "ffae35fc64f625c175571d2346bc5f6207be99762517f15423e74f18399410f6"
+          "url": "https://get.videolan.org/vlc/3.0.17.4/vlc-3.0.17.4.tar.xz",
+          "sha256": "8c5a62d88a4fb45c1b095cf10befef217dfa87aedcec5184b9e7d590b6dd4133",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 6504,
+            "stable-only": true,
+            "url-template": "https://get.videolan.org/vlc/$version/vlc-$version.tar.xz"
+          }
         },
         {
           "type": "patch",
@@ -55,10 +61,15 @@
       "name": "lmdb",
       "sources": [
         {
-          "type": "git",
-          "url": "https://github.com/LMDB/lmdb.git",
-          "branch": "LMDB_0.9.18",
-          "commit": "ad8488cfac644d7a289e428ab3c403c859d844cb"
+          "type": "archive",
+          "url": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_0.9.29.tar.gz",
+          "sha256": "22054926b426c66d8f2bc22071365df6e35f3aacf19ad943bc6167d4cae3bebb",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 6974,
+            "stable-only": true,
+            "url-template": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_$version.tar.gz"
+          }
         }
       ],
       "no-autogen": true,
@@ -78,8 +89,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.88/baloo-5.88.0.tar.xz",
-          "sha256": "09018da3a01c21e9a8369841fa033737e1b93b56f2b2837663e657ff076abc3d"
+          "url": "https://download.kde.org/stable/frameworks/5.94/baloo-5.94.0.tar.xz",
+          "sha256": "9dc4182e5803c32a47d6a82588f6a6b36837fb44a90fe4404750886150b9273a",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 8762,
+            "stable-only": true,
+            "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/baloo-$version.tar.xz"
+          }
         }
       ]
     },
@@ -93,7 +110,13 @@
         {
           "type": "archive",
           "url": "https://download.kde.org/stable/release-service/22.04.1/src/elisa-22.04.1.tar.xz",
-          "sha256": "77bea9ed938ccda42818fc89612c86242e391fba435ba4a48a832404be155e05"
+          "sha256": "77bea9ed938ccda42818fc89612c86242e391fba435ba4a48a832404be155e05",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 17780,
+            "stable-only": true,
+            "url-template": "https://download.kde.org/stable/release-service/$version/src/elisa-$version.tar.xz"
+          }
         }
       ]
     }
