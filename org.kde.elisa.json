@@ -1,124 +1,124 @@
 {
-  "id": "org.kde.elisa",
-  "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
-  "sdk": "org.kde.Sdk",
-  "command": "elisa",
-  "rename-icon": "elisa",
-  "finish-args": [
-    "--share=ipc",
-    "--socket=x11",
-    "--socket=wayland",
-    "--filesystem=host:ro",
-    "--socket=pulseaudio",
-    "--device=dri",
-    "--talk-name=org.kde.baloo",
-    "--talk-name=org.kde.StatusNotifierWatcher",
-    "--own-name=org.mpris.MediaPlayer2.elisa",
-    "--env=BALOO_DB_PATH=.local/share/baloo"
-  ],
-  "cleanup": [
-    "/include",
-    "/lib/pkgconfig",
-    "/lib/cmake",
-    "*.la",
-    "*.a"
-  ],
-  "cleanup-commands": [
-    "rm -f /app/lib/vlc/plugins/plugins.dat",
-    "/app/lib/vlc/vlc-cache-gen /app/lib/vlc/plugins"
-  ],
-  "modules": [
-    {
-      "config-opts": [
-        "BUILDCC=gcc",
-        "--disable-lua",
-        "--disable-a52",
-        "--disable-qt",
-        "--disable-ncurses",
-        "--disable-udev"
-      ],
-      "name": "libvlc",
-      "sources": [
+    "id": "org.kde.elisa",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15-21.08",
+    "sdk": "org.kde.Sdk",
+    "command": "elisa",
+    "rename-icon": "elisa",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--filesystem=host:ro",
+        "--socket=pulseaudio",
+        "--device=dri",
+        "--talk-name=org.kde.baloo",
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--own-name=org.mpris.MediaPlayer2.elisa",
+        "--env=BALOO_DB_PATH=.local/share/baloo"
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/lib/cmake",
+        "*.la",
+        "*.a"
+    ],
+    "cleanup-commands": [
+        "rm -f /app/lib/vlc/plugins/plugins.dat",
+        "/app/lib/vlc/vlc-cache-gen /app/lib/vlc/plugins"
+    ],
+    "modules": [
         {
-          "type": "archive",
-          "url": "https://get.videolan.org/vlc/3.0.17.4/vlc-3.0.17.4.tar.xz",
-          "sha256": "8c5a62d88a4fb45c1b095cf10befef217dfa87aedcec5184b9e7d590b6dd4133",
-          "x-checker-data": {
-            "type": "anitya",
-            "project-id": 6504,
-            "stable-only": true,
-            "url-template": "https://get.videolan.org/vlc/$version/vlc-$version.tar.xz"
-          }
+            "config-opts": [
+                "BUILDCC=gcc",
+                "--disable-lua",
+                "--disable-a52",
+                "--disable-qt",
+                "--disable-ncurses",
+                "--disable-udev"
+            ],
+            "name": "libvlc",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://get.videolan.org/vlc/3.0.17.4/vlc-3.0.17.4.tar.xz",
+                    "sha256": "8c5a62d88a4fb45c1b095cf10befef217dfa87aedcec5184b9e7d590b6dd4133",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 6504,
+                        "stable-only": true,
+                        "url-template": "https://get.videolan.org/vlc/$version/vlc-$version.tar.xz"
+                    }
+                },
+                {
+                    "type": "patch",
+                    "path": "vlc-ignore-time-for-cache.patch"
+                }
+            ]
         },
         {
-          "type": "patch",
-          "path": "vlc-ignore-time-for-cache.patch"
-        }
-      ]
-    },
-    {
-      "name": "lmdb",
-      "sources": [
+            "name": "lmdb",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_0.9.29.tar.gz",
+                    "sha256": "22054926b426c66d8f2bc22071365df6e35f3aacf19ad943bc6167d4cae3bebb",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 6974,
+                        "stable-only": true,
+                        "url-template": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_$version.tar.gz"
+                    }
+                }
+            ],
+            "no-autogen": true,
+            "make-install-args": [
+                "prefix=/app"
+            ],
+            "subdir": "libraries/liblmdb"
+        },
         {
-          "type": "archive",
-          "url": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_0.9.29.tar.gz",
-          "sha256": "22054926b426c66d8f2bc22071365df6e35f3aacf19ad943bc6167d4cae3bebb",
-          "x-checker-data": {
-            "type": "anitya",
-            "project-id": 6974,
-            "stable-only": true,
-            "url-template": "https://github.com/LMDB/lmdb/archive/refs/tags/LMDB_$version.tar.gz"
-          }
-        }
-      ],
-      "no-autogen": true,
-      "make-install-args": [
-        "prefix=/app"
-      ],
-      "subdir": "libraries/liblmdb"
-    },
-    {
-      "config-opts": [
-        "-DBUILD_TESTING=OFF",
-        "-DCMAKE_INSTALL_LIBDIR=lib"
-      ],
-      "name": "baloo",
-      "buildsystem": "cmake-ninja",
-      "builddir": true,
-      "sources": [
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_INSTALL_LIBDIR=lib"
+            ],
+            "name": "baloo",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/frameworks/5.94/baloo-5.94.0.tar.xz",
+                    "sha256": "9dc4182e5803c32a47d6a82588f6a6b36837fb44a90fe4404750886150b9273a",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8762,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/baloo-$version.tar.xz"
+                    }
+                }
+            ]
+        },
         {
-          "type": "archive",
-          "url": "https://download.kde.org/stable/frameworks/5.94/baloo-5.94.0.tar.xz",
-          "sha256": "9dc4182e5803c32a47d6a82588f6a6b36837fb44a90fe4404750886150b9273a",
-          "x-checker-data": {
-            "type": "anitya",
-            "project-id": 8762,
-            "stable-only": true,
-            "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/baloo-$version.tar.xz"
-          }
+            "name": "elisa",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/release-service/22.04.2/src/elisa-22.04.2.tar.xz",
+                    "sha256": "dbc44da077022b2c2d1ea8b9f000a4c5b56a3d2b8e9f0227d64fa5d153850036",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 17780,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/elisa-$version.tar.xz"
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "elisa",
-      "buildsystem": "cmake-ninja",
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.kde.org/stable/release-service/22.04.1/src/elisa-22.04.1.tar.xz",
-          "sha256": "77bea9ed938ccda42818fc89612c86242e391fba435ba4a48a832404be155e05",
-          "x-checker-data": {
-            "type": "anitya",
-            "project-id": 17780,
-            "stable-only": true,
-            "url-template": "https://download.kde.org/stable/release-service/$version/src/elisa-$version.tar.xz"
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
