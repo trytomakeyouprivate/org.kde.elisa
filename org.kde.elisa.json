@@ -7,11 +7,13 @@
     "rename-icon": "elisa",
     "finish-args": [
         "--share=ipc",
+        "--share=network",
         "--socket=x11",
         "--socket=wayland",
         "--filesystem=host:ro",
         "--socket=pulseaudio",
         "--device=dri",
+        "--system-talk-name=org.freedesktop.UDisks2",
         "--talk-name=org.kde.baloo",
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--own-name=org.mpris.MediaPlayer2.elisa",
