@@ -95,8 +95,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.106/baloo-5.106.0.tar.xz",
-                    "sha256": "4e6ae18e7a0a73e7c350c8bed995ece41063c12baab16fbb14d1c08ac48722bd",
+                    "url": "https://download.kde.org/stable/frameworks/5.107/baloo-5.107.0.tar.xz",
+                    "sha256": "e2434e75afeabd260dea3b32b474f09bbc9dd91c215924f8fdd76b98fa777a44",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
@@ -115,8 +115,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.04.1/src/elisa-23.04.1.tar.xz",
-                    "sha256": "03ab298e83a4daf17acbe8e046516d689471a47260ffb29dca43d47f0a58533a",
+                    "url": "https://download.kde.org/stable/release-service/23.04.2/src/elisa-23.04.2.tar.xz",
+                    "sha256": "d16fd47b9a41d5ca51cafe1c09b41446b933b47c03fc55ef8f311aad40f1ea7a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 17780,
